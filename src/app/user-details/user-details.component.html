@@ -1,0 +1,26 @@
+<div class="row ">  
+    <i class="fa-solid fa-arrow-left-long fa-2x ms-4 pointer" routerLink="/home"></i>
+    <div class="col-md-8 mx-auto text-center bg-body-tertiary rounded-3">
+        <div class="w-100">
+            <img class="w-25" [src]="userDetails?.avatar" alt="">
+        </div>
+        <h2 class="text-center text-primary">{{userDetails?.first_name+" "+ userDetails?.last_name}} </h2>
+        <div class="d-flex fs-4 w-100 text-center justify-content-center">
+            user id :{{userDetails?.id}} <br>
+            user email : {{userDetails?.email}}
+        </div>
+    </div>
+
+</div>
+<div class="loud bg-white opacity-50 position-fixed w-100 h-100 top-0 end-0 start-0 pb-5 mb-5" style="display: none;">
+    <div class="dot-spinner m-auto top-50 ">
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+    </div>
+</div>
